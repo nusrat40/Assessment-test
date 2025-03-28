@@ -1,3 +1,12 @@
+/*
+Proof of work:
+- Response 1: See screenshot "Response1_Chaining_Error.png"
+   Error proves chaining setAttribute() fails in vanilla JS.
+*/
+
+
+
+
 //Response 1 Test 
 
 const key ="test";
