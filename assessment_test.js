@@ -2,9 +2,10 @@
 Proof of work:
 - Response 1: See screenshot "Response1_Chaining_Error.png"
    Error proves chaining setAttribute() fails in vanilla JS.
+
+-Response 2: See screenshot "Response2_UtilityFunction_Valid.png"
+  Output shows valid HTML element creation.
 */
-
-
 
 
 //Response 1 Test 
