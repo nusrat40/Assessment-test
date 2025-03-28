@@ -24,3 +24,42 @@ catch(error){
     console.log("Response 1 Error:", error.message);
     
 }
+
+
+//Response 2 Test
+
+function createAndConfigureElement(tag,attributes){
+    try{
+        const element = document.createElement(tag);
+       for(const [key,value] of Object.entries(attributes)){
+        element.setAttribute(key,value);
+    }
+    return element;
+    }
+    catch(error)
+    {
+        console.log("Utility Function Error:", error.message);
+        return null;
+        
+    }
+}
+
+try{
+    const newHiddenInput = createAndConfigureElement('input',{
+        type:'hidden',
+        name:'test',
+        value:'123'
+    });
+    if(newHiddenInput)
+    {
+        console.log("Response 2 Success:", newHiddenInput.outerHTML);
+        
+    }
+    else{
+        console.error("Response 2 Failed: Element creation returned null");
+    }
+}
+catch(error)
+{
+    console.error("Response 2 Runtime Error:", error.message);
+}
